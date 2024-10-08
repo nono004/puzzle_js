@@ -6,3 +6,9 @@ document.querySelectorAll('.flame div').forEach(piece => {
     })
 });
 
+document.querySelector('.flame').addEventListener('drop', (event) => {
+    event.preventDefault();
+    const draggedPieceId = event.dataTransfer.getData('text');
+    console.log(`ドロップされたピースのID: ${draggedPieceId}`)
+})
+
