@@ -6,7 +6,11 @@ document.querySelectorAll('.flame div').forEach(piece => {
     })
 });
 
-document.querySelector('.flame').addEventListener('drop', (event) => {
+document.getElementById('dropTarget').addEventListener('dragover', (event) =>{
+    event.preventDefault();
+})
+
+document.getElementById('dropTarget').addEventListener('drop', (event) => {
     event.preventDefault();
     const draggedPieceId = event.dataTransfer.getData('text');
     console.log(`ドロップされたピースのID: ${draggedPieceId}`)
