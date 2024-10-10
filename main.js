@@ -6,13 +6,17 @@ document.querySelectorAll('.flame div').forEach(piece => {
     })
 });
 
-document.getElementById('dropTarget').addEventListener('dragover', (event) =>{
+const dropArea = document.getElementById('dropTarget')
+dropArea.addEventListener('dragover', (event) =>{
     event.preventDefault();
 })
 
-document.getElementById('dropTarget').addEventListener('drop', (event) => {
+dropArea.addEventListener('drop', (event) => {
     event.preventDefault();
     const draggedPieceId = event.dataTransfer.getData('text');
-    console.log(`ドロップされたピースのID: ${draggedPieceId}`)
+    console.log(`ドロップされたピースのID: ${draggedPieceId}`);
+    //ドラッグされたピースを取得
+    const draggedPiece = document.getElementById(draggedPieceId);
+    dropArea.appendChild(draggedPiece);
 })
 
