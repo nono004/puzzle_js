@@ -31,3 +31,15 @@ body{
     height: 600px;
     border: 1px solid #333;
 }
+
+.dropArea{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 600px;
+    grid-auto-rows: 200px;
+}
+
+.dropTarget{
+    border: 1px solid #333;
+}
