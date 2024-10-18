@@ -1,19 +1,46 @@
-body{
+/*body{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-}
+}*/
 
 .flame{
     justify-content: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 600px;
-    grid-auto-rows: 200px;
+    width: 300px;
+    grid-auto-rows: 100px;
 }
 
+.answer-5,.answer-6,.answer-9{
+    background-color: #ef5285;
+}
+
+.answer-1,.answer-2,.answer-8{
+    background-color: #a5dff9;
+}
+
+.answer-3,.answer-4,.answer-7{
+    background-color: #feee7d;
+}
+
+.piece{
+    width: 100px;
+    height: 100px;
+}
+
+.piece-area{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.piece-paragraph{
+    display: flex;
+    gap:10px;
+}
 .piece-1,.piece-5,.piece-7{
     background-color: #D5A8A8;
 }
@@ -27,8 +54,8 @@ body{
 }
 
 .dropZone{
-    width: 600px;
-    height: 600px;
+    width: 300px;
+    height: 300px;
     border: 1px solid #333;
 }
 
@@ -36,8 +63,8 @@ body{
     justify-content: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 600px;
-    grid-auto-rows: 200px;
+    width: 300px;
+    grid-auto-rows: 100px;
 }
 
 .dropTarget{
