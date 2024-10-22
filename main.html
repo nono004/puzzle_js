@@ -7,56 +7,61 @@
     <link href="main.css" rel="stylesheet" />
 </head>
 <body>
-    <h1>Puzzle Game</h1>
-    <p>
-        <h2>Answer</h2>
+    <header>
+        <h1>Puzzle Game</h1>
+    </header>
+    <main>
+        <div>
+            <h2>Pieces</h2>
             <!--初期に配置されているピース-->
             <div class="flame">
-                <div class="answer-1"></div>
-                <div class="answer-2"></div>
-                <div class="answer-3"></div>
-                <div class="answer-4"></div>
-                <div class="answer-5"></div>
-                <div class="answer-6"></div>
-                <div class="answer-7"></div>
-                <div class="answer-8"></div>
-                <div class="answer-9"></div>
-            </div>
-    </p>
-    <p>
-        <h2>Pieces</h2>
-        <div class="piece-area">
-            <div class="piece-paragraph">
-                <div class="piece piece-1", id="piece-1" draggable="true">1</div>
-                <div class="piece piece-2", id="piece-2" draggable="true">2</div>
-                <div class="piece piece-3", id="piece-3" draggable="true">3</div>
-            </div>
-            <div class="piece-paragraph">
-                <div class="piece piece-4", id="piece-4" draggable="true">4</div>
-                <div class="piece piece-5", id="piece-5" draggable="true">5</div>
-                <div class="piece piece-6", id="piece-6" draggable="true">6</div>
-            </div>
-            <div class="piece-paragraph">
-                <div class="piece piece-7", id="piece-7" draggable="true">7</div>
-                <div class="piece piece-8", id="piece-8" draggable="true">8</div>
-                <div class="piece piece-9", id="piece-9" draggable="true">9</div>
+                <div class="piece piece-1", id="piece-1" draggable="true"></div>
+                <div class="piece piece-2", id="piece-2" draggable="true"></div>
+                <div class="piece piece-3", id="piece-3" draggable="true"></div>
+                <div class="piece piece-4", id="piece-4" draggable="true"></div>
+                <div class="piece piece-5", id="piece-5" draggable="true"></div>
+                <div class="piece piece-6", id="piece-6" draggable="true"></div>
+                <div class="piece piece-7", id="piece-7" draggable="true"></div>
+                <div class="piece piece-8", id="piece-8" draggable="true"></div>
+                <div class="piece piece-9", id="piece-9" draggable="true"></div>
             </div>
         </div>
-    </p>
-    <!--ピースをドロップするエリア-->
-    <div class="dropArea" id="dropArea">
-        <div class="dropTarget", id="dropTarget-1"></div>
-        <div class="dropTarget", id="dropTarget-2"></div>
-        <div class="dropTarget", id="dropTarget-3"></div>
-        <div class="dropTarget", id="dropTarget-4"></div>
-        <div class="dropTarget", id="dropTarget-5"></div>
-        <div class="dropTarget", id="dropTarget-6"></div>
-        <div class="dropTarget", id="dropTarget-7"></div>
-        <div class="dropTarget", id="dropTarget-8"></div>
-        <div class="dropTarget", id="dropTarget-9"></div>
-    </div>
-    <!--正誤判定ボタン-->
-    <button id="checkButton">正誤判定</button>
+        <div class="answer_field">
+            <div class="answer">
+                <h2>Answer</h2>
+                <div class="answer-flame">
+                    <div class="answer-1"></div>
+                    <div class="answer-2"></div>
+                    <div class="answer-3"></div>
+                    <div class="answer-4"></div>
+                    <div class="answer-5"></div>
+                    <div class="answer-6"></div>
+                    <div class="answer-7"></div>
+                    <div class="answer-8"></div>
+                    <div class="answer-9"></div>
+                </div>
+            </div>
+            <div class="field">
+                <h2>Field</h2>
+                <!--ピースをドロップするエリア-->
+                <div class="dropArea" id="dropArea">
+                    <div class="dropTarget", id="dropTarget-1"></div>
+                    <div class="dropTarget", id="dropTarget-2"></div>
+                    <div class="dropTarget", id="dropTarget-3"></div>
+                    <div class="dropTarget", id="dropTarget-4"></div>
+                    <div class="dropTarget", id="dropTarget-5"></div>
+                    <div class="dropTarget", id="dropTarget-6"></div>
+                    <div class="dropTarget", id="dropTarget-7"></div>
+                    <div class="dropTarget", id="dropTarget-8"></div>
+                    <div class="dropTarget", id="dropTarget-9"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!--正誤判定ボタン-->
+        <button id="checkButton">check!!</button>
+    </footer>
     <script src="main.js"></script>
 </body>
 </html>

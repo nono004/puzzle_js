@@ -1,29 +1,80 @@
-/*body{
+body{
+    background-color: #fff7f3;
+}
+
+h1{
+    text-align: center;
+    color: #d85b67;
+}
+
+h2{
+    text-align: center;
+    color: #595959;
+}
+
+main{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     margin: 0;
-}*/
+    flex-direction: column;
+}
 
-.flame{
+.answer_field{
+    display: flex;
+    gap: 20px;
+}
+
+.answer-flame{
     justify-content: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 300px;
     grid-auto-rows: 100px;
 }
+.flame{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 300px;
+    grid-auto-rows: 100px;
+    gap: 15px 50px;
+}
 
-.answer-5,.answer-6,.answer-9{
+.answer-1{
+    background-color: #ffb3c1;
+}
+
+.answer-2{
+    background-color: #f9a8ff;
+}
+
+.answer-3{
+    background-color: #ffc5e1;
+}
+
+.answer-4{
     background-color: #ef5285;
 }
 
-.answer-1,.answer-2,.answer-8{
+.answer-5{
+    background-color: #ffeb8a;
+}
+
+.answer-6{
     background-color: #a5dff9;
 }
 
-.answer-3,.answer-4,.answer-7{
-    background-color: #feee7d;
+.answer-7{
+    background-color: #a1f7d8;
+}
+
+.answer-8{
+    background-color: #c1f9ff;
+}
+
+.answer-9{
+    background-color: #ff9aa2;
 }
 
 .piece{
@@ -34,23 +85,48 @@
 .piece-area{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 5px;
 }
 
 .piece-paragraph{
     display: flex;
-    gap:10px;
-}
-.piece-1,.piece-5,.piece-7{
-    background-color: #D5A8A8;
+    gap: 50px;
 }
 
-.piece-2,.piece-6,.piece-8{
-    background-color: #F2C9C9;
+.piece-1{
+    background-color: #ff9aa2;
 }
 
-.piece-3,.piece-4,.piece-9{
-    background-color: #F7E1E1;
+.piece-2{
+    background-color: #ef5285;
+}
+
+.piece-3{
+    background-color: #ffc5e1;
+}
+
+.piece-4{
+    background-color: #c1f9ff;
+}
+
+.piece-5{
+    background-color: #a1f7d8;
+}
+
+.piece-6{
+    background-color: #a5dff9;
+}
+
+.piece-7{
+    background-color: #ffb3c1;
+}
+
+.piece-8{
+    background-color: #ffeb8a;
+}
+
+.piece-9{
+    background-color: #f9a8ff;
 }
 
 .dropZone{
@@ -69,4 +145,25 @@
 
 .dropTarget{
     border: 1px solid #333;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+button{
+    width: 150px;
+    height: 50px;
+    background-color: #d85b67;
+    color: #fff;
+    border: none;
+    font-size: 30px;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: #e28b91;
 }

@@ -13,15 +13,15 @@ const dropArea = document.getElementById('dropArea');
 const dropTargets = dropArea.querySelectorAll("div");
 
 //各ターゲットに対して正しいピースのIDをセット
-document.getElementById('dropTarget-1').setAttribute('data-correct', 'piece-3');
-document.getElementById('dropTarget-2').setAttribute('data-correct', 'piece-4');
-document.getElementById('dropTarget-3').setAttribute('data-correct', 'piece-9');
+document.getElementById('dropTarget-1').setAttribute('data-correct', 'piece-7');
+document.getElementById('dropTarget-2').setAttribute('data-correct', 'piece-9');
+document.getElementById('dropTarget-3').setAttribute('data-correct', 'piece-3');
 document.getElementById('dropTarget-4').setAttribute('data-correct', 'piece-2');
-document.getElementById('dropTarget-5').setAttribute('data-correct', 'piece-6');
-document.getElementById('dropTarget-6').setAttribute('data-correct', 'piece-8');
-document.getElementById('dropTarget-7').setAttribute('data-correct', 'piece-1');
-document.getElementById('dropTarget-8').setAttribute('data-correct', 'piece-5');
-document.getElementById('dropTarget-9').setAttribute('data-correct', 'piece-7');
+document.getElementById('dropTarget-5').setAttribute('data-correct', 'piece-8');
+document.getElementById('dropTarget-6').setAttribute('data-correct', 'piece-6');
+document.getElementById('dropTarget-7').setAttribute('data-correct', 'piece-5');
+document.getElementById('dropTarget-8').setAttribute('data-correct', 'piece-4');
+document.getElementById('dropTarget-9').setAttribute('data-correct', 'piece-1');
 
 dropTargets.forEach(target => {
     target.addEventListener('dragover', (event) => {
